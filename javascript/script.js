@@ -6,7 +6,7 @@ fetch (apiURL)
     .then((data) => {
        let rain = data.current.rain;
 
-document.querySelector ("#rain").textContent = rain;
+document.querySelector ("#rain").textContent = rain + "mm";
 
         if (rain == 0){
             document.body.className = "noRain";
